@@ -64,4 +64,62 @@ p {
   color: #FAB219;
   font-weight: 600;
   font-size: 18px;
+}
+.header .mobile-menu {
+  display: none;
+  font-size: 25px;
+  position: relative;
+  width: 100%;
+}
+.header .mobile-menu .mobile-XMark {
+  overflow: hidden;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  z-index: 999;
+}
+.header .mobile-menu .mobile-content {
+  position: absolute;
+  width: 50%;
+  right: -70px;
+  top: -28px;
+  background-color: red;
+  opacity: 0.3;
+  transition: 0.9s;
+}
+.header .mobile-menu .mobile-content ul {
+  margin-top: 20px;
+  padding: 20px;
+  z-index: 999;
+}
+.header .mobile-menu .mobile-content ul li {
+  text-align: center;
+  padding: 10px 0;
+  z-index: 999;
+  color: #fff;
+}
+.header .mobile-menu .hamburger {
+  overflow: hidden;
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .number {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: block;
+  }
+}
+.home {
+  background-color: yellow;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

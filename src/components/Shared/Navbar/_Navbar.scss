@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  .logo {
-  }
+
+  .logo {}
+
   .menu {
     ul {
       .active {
@@ -21,9 +22,11 @@
         margin: 0 5px;
         font-weight: 600;
         transition: 0.3s;
+
         &:hover {
           color: $textColor;
         }
+
         .sub-arrow {
           position: absolute;
           font-size: 15px;
@@ -34,13 +37,78 @@
       }
     }
   }
+
   p {
     font-weight: 600;
     color: $p_textColor;
   }
-  .number{
+
+  .number {
     color: $textColor;
     font-weight: 600;
     font-size: 18px;
+  }
+
+  .mobile-menu {
+    display: none;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+
+    .mobile-XMark {
+      overflow: hidden;
+      position: absolute;
+      top: -12px;
+      right: 0;
+      z-index: 999;
+    }
+
+    .mobile-content {
+      position: absolute;
+      width: 50%;
+      right: -70px;
+      top: -28px;
+      background-color: red;
+      opacity: 0.3;
+      transition: 0.9s;
+
+      ul {
+        margin-top: 20px;
+        padding: 20px;
+        z-index: 999;
+
+        li {
+          text-align: center;
+          padding: 10px 0;
+          z-index: 999;
+          color: $white;
+        }
+      }
+    }
+
+    .hamburger {
+      overflow: hidden;
+      position: absolute;
+      top: -12px;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+
+    .menu {
+      display: none;
+    }
+
+    .number {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: block;
+    }
   }
 }

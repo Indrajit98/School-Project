@@ -1,0 +1,66 @@
+.swiper {
+  width: 100%;
+  height: 700px;
+  // border: 2px solid red;
+  position: relative;
+  top: -200px;
+  .swiper-wrapper {
+    .swiper-slide {
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid rebeccapurple;
+      .slider-content {
+        // border: 1px solid wheat;
+        h1 {
+          font-family: Sacramento;
+          color: $textColor;
+          font-size: 60px;
+          line-height: 70px;
+          font-weight: 400;
+        }
+        h2 {
+          font-family: Quicksand;
+          font-size: 100px;
+          line-height: 100px;
+          color: $white;
+          font-weight: 700;
+        }
+      }
+      .slider-image {
+        // border: 1px solid rebeccapurple;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          // border: 1px solid red;
+        }
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    // color: $white;
+    background-color: $white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    &::after {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+    &:hover {
+      background-color: $bg;
+      &::after {
+        color: $white;
+      }
+    }
+  }
+}

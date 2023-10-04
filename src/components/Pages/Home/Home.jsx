@@ -1,6 +1,7 @@
 import React from "react";
 import Wave from "react-wavify";
-import Sliders from "../Shared/Slider/Sliders";
+import Sliders from "../../Shared/Slider/Sliders";
+import Banner from "./Banner/Banner";
 
 const Home = () => {
   return (
@@ -58,6 +59,9 @@ const Home = () => {
       </div>
       <div className="slider">
         <Sliders></Sliders>
+      </div>
+      <div>
+        <Banner/>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Sliders = () => {
               </div>
             </div>
             <div className="slider-image">
-              <img src={sliderImage1} alt="img" />
+              <div className="animation"><img src={sliderImage1} alt="img" /></div>
             </div>
           </div>
         </SwiperSlide>
@@ -42,7 +42,7 @@ const Sliders = () => {
               </div>
             </div>
             <div className="slider-image">
-              <img src={sliderImage2} alt="img" />
+             <div className="animation"> <img src={sliderImage2} alt="img" /></div>
             </div>
           </div>
         </SwiperSlide>
@@ -57,7 +57,7 @@ const Sliders = () => {
               </div>
             </div>
             <div className="slider-image">
-              <img src={sliderImage3} alt="img" />
+             <div className="animation"> <img src={sliderImage3} alt="img" /></div>
             </div>
           </div>
         </SwiperSlide>

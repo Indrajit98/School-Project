@@ -1,27 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .btn {
-    width: 30%;
-    display: flex;
+  width: 30%;
+  display: flex;
+  border: 1px solid $bg;
+  background-color: $bg;
+  text-align: center;
+  font-size: 15px;
+  color: $white;
+  font-weight: 500;
+  line-height: 60px;
+  padding: 0 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin: 40px 0;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
     border: 1px solid $bg;
-    background-color: $bg;
-    text-align: center;
-    font-size: 15px;
-    color: $white;
-    font-weight: 500;
-    line-height: 60px;
-    padding: 0 30px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    margin:40px 0 ;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s;
-    &:hover{
-        border: 1px solid $bg;
-        background-color: transparent;
-    }
+    background-color: transparent;
+  }
+}
+@mixin card-icon($color) {
+  font-size: 80px;
+  color: $color;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20%;
+  margin: 20px 0;
+  //   background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   border: 3px solid $border ;
+}
+@mixin card-icon-border($bg, $border) {
+  background-color: $bg;
+  border: $border;
+}
+@mixin card-hover($border) {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: $white;
+  border: 3px dashed $border;
 }

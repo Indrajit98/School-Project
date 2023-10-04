@@ -3,6 +3,8 @@ import { FaRegCircle } from "react-icons/fa6";
 import banner from "../../../../assets/images/banner/h1-banner-01.png";
 import {TbAbc } from "react-icons/tb";
 import { GiBookCover } from "react-icons/gi";
+import { GiExpense } from "react-icons/gi";
+import { IoLibraryOutline } from "react-icons/io5";
 
 
 
@@ -14,7 +16,8 @@ const Banner = () => {
       <FaRegCircle className="icon" />
       <div className="container mx-auto">
         <div className="grid grid-cols-2 gap-4">
-          <div className="right">
+
+          <div className="left">
             <div className="image">
               <img src={banner} alt="" />
             </div>
@@ -22,35 +25,37 @@ const Banner = () => {
               <FaRegCircle className="icons" />
             </span>
           </div>
-          <div className="left">
-            <div className="left-content">
+
+          <div className="right">
+            <div className="right-content">
               <h3>Who we are</h3>
               <h1>The best playschool for your kid</h1>
               <div className="grid grid-cols-2 gap-4">
                 <div className=" card">
-                    <div className="card-icon">
+                    <div className="card-icon1">
                         <TbAbc/>
                     </div>
                     <h3>Self-contained gifted programs</h3>
                     <p>By creating a safe, consistent and welcoming environment</p>
                 </div>
+
                 <div className=" card">
-                    <div className="card-icon">
-                        <TbAbc/>
+                    <div className="card-icon2">
+                        <GiExpense/>
                     </div>
                     <h3>Self-contained gifted programs</h3>
                     <p>By creating a safe, consistent and welcoming environment</p>
                 </div>
                 <div className=" card">
-                    <div className="card-icon">
+                    <div className="card-icon3">
                         <GiBookCover/>
                     </div>
                     <h3>Self-contained gifted programs</h3>
                     <p>By creating a safe, consistent and welcoming environment</p>
                 </div>
                 <div className=" card">
-                    <div className="card-icon">
-                        <TbAbc/>
+                    <div className="card-icon4">
+                        <IoLibraryOutline/>
                     </div>
                     <h3>Self-contained gifted programs</h3>
                     <p>By creating a safe, consistent and welcoming environment</p>

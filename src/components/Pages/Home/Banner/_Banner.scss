@@ -4,60 +4,72 @@
   overflow: hidden;
   padding: 110px 0;
   .icon {
-    width: 1100px;
-    height: 800px;
+    width: 1000px;
+    height: 900px;
     color: $bannerIcon;
     position: absolute;
     top: -500px;
-    left: -200px;
+    left: -250px;
     z-index: -10;
   }
-  .right {
+  .left {
     // background-color: yellow;
     // border: 2px solid red;
     position: relative;
-    margin: 20px;
-    // overflow: hidden;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .icons {
       width: 200px;
       height: 200px;
       position: absolute;
-      right: 0;
-      bottom: 10px;
+      right: 25px;
+      bottom: 20px;
       color: $bg;
+      stroke: $bg;
+      stroke-width: 50px;
+      overflow: visible;
     }
     .image {
-      // display: none;
-    }
-    h1 {
-      font-size: 48px;
-      z-index: 99;
-      //   background-color: red;
+    object-fit: cover;
+    // border: 1px solid red;  
     }
   }
-  .left {
-    .left-content {
+  .right {
+    .right-content {
       h3 {
-        font-size: 36px;
+        font-size: 40px;
         font-family: Sacramento;
         color: $textColor;
+        letter-spacing: 3px;
+        line-height: 60px;
+      }
+      h1{
+        font-size: 65px;
+        font-family: Quicksand;
+        font-weight: 700;
+        letter-spacing: -3px;
+        color:$h1_textColor ;
+        line-height: 60px;
+        padding: 15px 0;
       }
       .card {
         // border: 1px solid red;
-        .card-icon {
-          font-size: 80px;
-          color: $textColor;
-          width: 100px;
-          height: 100px;
-          padding: 20px;
-          border-radius: 20%;
-          margin: 20px 0;
-          background-color: #feefcf;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 3px solid #feefcf ;
+        .card-icon1 {
+          @include card-icon($card-icon1);
+          @include card-icon-border($card-icon1-bg, 3px solid $card-icon1-bg)
+        }
+        .card-icon2 {
+          @include card-icon($card-icon2);
+          @include card-icon-border($card-icon2-bg, 3px solid $card-icon2-bg)
+        }
+        .card-icon3 {
+          @include card-icon($card-icon3);
+          @include card-icon-border($card-icon3-bg, 3px solid $card-icon3-bg)
+        }
+        .card-icon4 {
+          @include card-icon($card-icon4);
+          @include card-icon-border($card-icon4-bg, 3px solid $card-icon4-bg)
         }
         h3 {
           font-size: 18px;
@@ -72,11 +84,20 @@
         }
         &:hover{
           cursor: pointer;
-          .card-icon{
-            border-radius: 50%;
-            border: 3px dashed $bg;
-            background-color: $white;
-            transition: .1s ease-in-out;
+          .card-icon1{
+            @include card-hover($card-icon1);
+          }
+          .card-icon2{
+            @include card-hover($card-icon2);
+          }
+          .card-icon3{
+            @include card-hover($card-icon3);
+          }
+          .card-icon4{
+            @include card-hover($card-icon4);
+          }
+          h3{
+            color: $textColor;
           }
         }
       }

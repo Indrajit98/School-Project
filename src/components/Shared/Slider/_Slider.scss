@@ -9,24 +9,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-      .slider-content {
-
-        h1 {
-          font-family: Sacramento;
-          color: $textColor;
-          font-size: 60px;
-          line-height: 70px;
-          font-weight: 400;
-        }
-        h2 {
-          font-family: Quicksand;
-          font-size: 100px;
-          line-height: 100px;
-          color: $white;
-          font-weight: 700;
-        }
-      }
+      
       .slider-image {
         // border: 1px solid rebeccapurple;
         height: 100%;

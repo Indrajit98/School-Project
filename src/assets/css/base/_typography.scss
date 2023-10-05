@@ -1,24 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Sacramento&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Quicksand:wght@300;400;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Quicksand:wght@300;400;600;700&display=swap');
-
-body{
-    font-size: 'open Sans',sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+body {
+  font-size: "open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
-h1,h2,h3,h4,h5,h6{
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 50px;
+
+h1 {
+  font-family: Quicksand;
+  font-size: 100px;
+  line-height: 100px;
+  color: $white;
+  font-weight: 700;
 }
-p{
-    font-size: 16px;
-    line-height: 25px;
+h2{
+    font-size: 65px;
+    font-family: Quicksand;
+    font-weight: 700;
+    letter-spacing: -3px;
+    color:$h1_textColor ;
+    line-height: 60px;
+    padding: 15px 0;
+  }
+h3 {
+  font-family: Sacramento;
+  color: $textColor;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+}
+h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: Quicksand;
+    color: $h3_textColor;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+p {
+  font-size: 16px;
+  line-height: 25px;
 }

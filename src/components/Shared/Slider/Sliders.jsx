@@ -14,14 +14,16 @@ import sliderImage3 from "../../../assets/images/slider/sliderImage3.png";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
 const Sliders = () => {
+
+  
   return (
     <div className="container mx-auto  ">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <div className="grid md:grid-cols-2 items-center gap-4">
             <div className="slider-content" >
-              <h1>let your child</h1>
-              <h2>Embark on a new journey </h2>
+              <h3>let your child</h3>
+              <h1>Embark on a new journey </h1>
               <div className="btn" data-aos="zoom-in" >
                 find out more <FaCircleArrowRight className="ml-3" />{" "}
               </div>
@@ -35,8 +37,8 @@ const Sliders = () => {
         <SwiperSlide>
           <div className="grid md:grid-cols-2 items-center gap-4">
             <div className="slider-content" >
-              <h1>let your child</h1>
-              <h2>Fun & engaging learning </h2>
+              <h3>let your child</h3>
+              <h1>Fun & engaging learning </h1>
               <div className="btn" data-aos="zoom-in">
                 find out more <FaCircleArrowRight className="ml-3" />{" "}
               </div>
@@ -50,8 +52,8 @@ const Sliders = () => {
         <SwiperSlide>
           <div className="grid md:grid-cols-2 items-center gap-4">
             <div className="slider-content" >
-              <h1>let your child</h1>
-              <h2>Creative kid’s world </h2>
+              <h3>let your child</h3>
+              <h1>Creative kid’s world </h1>
               <div className="btn" data-aos="zoom-in">
                 find out more <FaCircleArrowRight className="ml-3" />{" "}
               </div>

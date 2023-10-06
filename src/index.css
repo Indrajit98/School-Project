@@ -39,7 +39,7 @@ h3 {
   font-weight: 400;
 }
 
-h5 {
+h5, h4 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: 700;
@@ -49,9 +49,16 @@ h5 {
   letter-spacing: 1px;
 }
 
+h4 {
+  font-size: 22px;
+}
+
 p {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: Quicksand;
+  color: #66717A;
 }
 
 * {
@@ -296,6 +303,8 @@ p {
 }
 .banner .right .right-content .card .card-icon1 {
   font-size: 80px;
+  background-color: #feefcf;
+  border: 3px solid #feefcf;
   color: #fab31c;
   width: 100px;
   height: 100px;
@@ -305,11 +314,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #feefcf;
-  border: 3px solid #feefcf;
+  font-weight: 800;
 }
 .banner .right .right-content .card .card-icon2 {
   font-size: 80px;
+  background-color: #FDD5D5;
+  border: 3px solid #FDD5D5;
   color: #f32c2c;
   width: 100px;
   height: 100px;
@@ -319,11 +329,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FDD5D5;
-  border: 3px solid #FDD5D5;
+  font-weight: 800;
 }
 .banner .right .right-content .card .card-icon3 {
   font-size: 80px;
+  background-color: #F9DDEE;
+  border: 3px solid #F9DDEE;
   color: #df57a8;
   width: 100px;
   height: 100px;
@@ -333,11 +344,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F9DDEE;
-  border: 3px solid #F9DDEE;
+  font-weight: 800;
 }
 .banner .right .right-content .card .card-icon4 {
   font-size: 80px;
+  background-color: #DCF4FC;
+  border: 3px solid #DCF4FC;
   color: #51c9ee;
   width: 100px;
   height: 100px;
@@ -347,11 +359,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #DCF4FC;
-  border: 3px solid #DCF4FC;
-}
-.banner .right .right-content .card p {
-  color: #66717A;
+  font-weight: 800;
 }
 .banner .right .right-content .card:hover {
   cursor: pointer;
@@ -380,11 +388,97 @@ p {
   background-color: #fff;
   border: 3px dashed #51c9ee;
 }
-.banner .right .right-content .card:hover h3 {
+.banner .right .right-content .card:hover h5, .banner .right .right-content .card:hover h4 {
   color: #FAB219;
 }
 
 .course {
   background-color: #FAF4EA;
   padding: 100px 0;
+}
+.course .course-title {
+  text-align: center;
+}
+.course .course-card .card {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.course .course-card .card .card-image {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.course .course-card .card .course-content {
+  position: relative;
+  padding: 20px;
+  bottom: 0;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.course .course-card .card .course-content .class-price {
+  background-color: #FAAF11;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -45px;
+  right: 40px;
+  transition: 0.5s;
+}
+.course .course-card .card .course-content .class-meta-list {
+  border-top: 2px solid #f1f1f1;
+  margin-top: 10px;
+}
+.course .course-card .card .course-content .class-meta-list ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.course .course-card .card .course-content .class-meta-list ul li {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f1f1f1;
+  padding-right: 50px;
+  text-align: left;
+  font-family: Quicksand;
+}
+.course .course-card .card .course-content .class-meta-list ul li:last-child {
+  border: none;
+}
+.course .course-card .card .course-content .class-meta-list ul li .meta-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #66717A;
+}
+.course .course-card .card .course-content .class-meta-list ul li .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #23215b;
+}
+.course .course-card .card .btn {
+  width: 100%;
+  margin: 0;
+  bottom: -65px;
+  position: absolute;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.course .course-card .card:hover .card-image {
+  transform: scale(1.1);
+}
+.course .course-card .card:hover .course-content {
+  bottom: 40px;
+}
+.course .course-card .card:hover .course-content .class-price {
+  background-color: #48D7EE;
+}
+.course .course-card .card:hover .btn {
+  bottom: 0;
+  background-color: #FAAF11;
 }/*# sourceMappingURL=index.css.map */

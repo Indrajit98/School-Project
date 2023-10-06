@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+// common sass
 .btn {
   width: 30%;
   display: flex;
@@ -25,27 +26,39 @@
     background-color: transparent;
   }
 }
-@mixin card-icon($color) {
+@mixin card-icon($color, $bg, $border) {
   font-size: 80px;
+  background-color: $bg;
+  border: $border;
   color: $color;
   width: 100px;
   height: 100px;
   padding: 20px;
   border-radius: 20%;
   margin: 20px 0;
-  //   background-color: $background-color;
   display: flex;
   align-items: center;
   justify-content: center;
-  //   border: 3px solid $border ;
-}
-@mixin card-icon-border($bg, $border) {
-  background-color: $bg;
-  border: $border;
+  font-weight: 800;
 }
 @mixin card-hover($border) {
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: $white;
   border: 3px dashed $border;
+}
+
+@mixin price {
+  background-color: $bg;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: $white;
+  position: absolute;
+  top: -45px;
+  right: 40px;
 }

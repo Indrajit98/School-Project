@@ -1,5 +1,4 @@
 .banner {
-  // border: 1px solid #ff0000;
   position: relative;
   overflow: hidden;
   padding: 110px 0;
@@ -13,8 +12,6 @@
     z-index: -10;
   }
   .left {
-    // background-color: yellow;
-    // border: 2px solid red;
     position: relative;
     display: flex;
     justify-content: center;
@@ -31,32 +28,28 @@
       overflow: visible;
     }
     .image {
-    object-fit: cover;
-    // border: 1px solid red;  
+    object-fit: cover; 
     }
   }
   .right {
     .right-content {
       .card {
-        // border: 1px solid red;
+ 
         .card-icon1 {
-          @include card-icon($card-icon1);
-          @include card-icon-border($card-icon1-bg, 3px solid $card-icon1-bg)
+          @include card-icon($card-icon1,$card-icon1-bg, 3px solid $card-icon1-bg);
+
         }
         .card-icon2 {
-          @include card-icon($card-icon2);
-          @include card-icon-border($card-icon2-bg, 3px solid $card-icon2-bg)
+          @include card-icon($card-icon2,$card-icon2-bg, 3px solid $card-icon2-bg);
+      
         }
         .card-icon3 {
-          @include card-icon($card-icon3);
-          @include card-icon-border($card-icon3-bg, 3px solid $card-icon3-bg)
+          @include card-icon($card-icon3,$card-icon3-bg, 3px solid $card-icon3-bg);
+        
         }
         .card-icon4 {
-          @include card-icon($card-icon4);
-          @include card-icon-border($card-icon4-bg, 3px solid $card-icon4-bg)
-        }
-        p {
-          color: $p_textColor;
+          @include card-icon($card-icon4,$card-icon4-bg, 3px solid $card-icon4-bg);
+         
         }
         &:hover{
           cursor: pointer;
@@ -72,7 +65,7 @@
           .card-icon4{
             @include card-hover($card-icon4);
           }
-          h3{
+          h5{
             color: $textColor;
           }
         }

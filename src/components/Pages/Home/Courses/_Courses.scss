@@ -6,91 +6,94 @@
         text-align: center;
     }
 
-    .course-card {
-        .card {
-            background-color: $white;
-            position: relative;
-            overflow: hidden;
-
-            .card-image {
-                transform: scale(1);
-                transition: 0.3s;
-            }
-
-            .course-content {
-                position: relative;
-                padding: 20px;
-                bottom: 0;
+    .swiper{
+        top: -40px;
+        .course-card {
+            .card {
                 background-color: $white;
-                transition: 0.3s;
-
-                .class-price {
-                    @include price;
-                    transition: .5s;
+                position: relative;
+                overflow: hidden;
+    
+                .card-image {
+                    transform: scale(1);
+                    transition: 0.3s;
                 }
-
-                .class-meta-list {
-                    border-top: 2px solid $border-color;
-                    margin-top: 10px;
-
-                    ul {
-                        display: flex;
-                        justify-content: space-around;
-                        padding: 20px 0;
-
-                        li {
+    
+                .course-content {
+                    position: relative;
+                    padding: 20px;
+                    bottom: 0;
+                    background-color: $white;
+                    transition: 0.3s;
+    
+                    .class-price {
+                        @include price;
+                        transition: .5s;
+                    }
+    
+                    .class-meta-list {
+                        border-top: 2px solid $border-color;
+                        margin-top: 10px;
+    
+                        ul {
                             display: flex;
-                            flex-direction: column;
-                            border-right: 1px solid $border-color;
-                            padding-right: 50px;
-                            text-align: left;
-                            font-family: Quicksand;
-
-                            &:last-child {
-                                border: none;
-                            }
-
-                            .meta-title {
-                                font-size: 16px;
-                                font-weight: 800;
-                                color: $p-textColor;
-                            }
-
-                            .value {
-                                font-size: 16px;
-                                font-weight: 600;
-                                color: $h1_textColor;
+                            justify-content: space-around;
+                            padding: 20px 0;
+    
+                            li {
+                                display: flex;
+                                flex-direction: column;
+                                border-right: 1px solid $border-color;
+                                padding-right: 50px;
+                                text-align: left;
+                                font-family: Quicksand;
+    
+                                &:last-child {
+                                    border: none;
+                                }
+    
+                                .meta-title {
+                                    font-size: 16px;
+                                    font-weight: 800;
+                                    color: $p-textColor;
+                                }
+    
+                                .value {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: $h1_textColor;
+                                }
                             }
                         }
                     }
                 }
-            }
-
-            .btn {
-                width: 100%;
-                margin: 0;
-                bottom: -65px;
-                position: absolute;
-                transition: 0.3s;
-                display: flex;
-                justify-content: center;
-            }
-
-            &:hover {
-                .card-image {
-                    transform: scale(1.1);
-                }
-
-                .course-content {
-                    bottom: 40px;
-                    .class-price{
-                        background-color: $price-hover;
-                    }
-                }
-
+    
                 .btn {
-                    bottom: 0;
-                    background-color: $bg;
+                    width: 100%;
+                    margin: 0;
+                    bottom: -65px;
+                    position: absolute;
+                    transition: 0.3s;
+                    display: flex;
+                    justify-content: center;
+                }
+    
+                &:hover {
+                    .card-image {
+                        transform: scale(1.1);
+                    }
+    
+                    .course-content {
+                        bottom: 40px;
+                        .class-price{
+                            background-color: $price-hover;
+                        }
+                    }
+    
+                    .btn {
+                        bottom: 0;
+                        background-color: $bg;
+                    }
                 }
             }
         }

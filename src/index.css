@@ -296,6 +296,10 @@ p {
   stroke: #FAAF11;
   stroke-width: 50px;
   overflow: visible;
+  transition: 0.3s;
+}
+.banner .left .icons:hover {
+  bottom: 50px;
 }
 .banner .left .image {
   -o-object-fit: cover;
@@ -395,6 +399,18 @@ p {
 .course {
   background-color: #FAF4EA;
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.course .icon {
+  width: 900px;
+  height: 900px;
+  color: #F9DDEE;
+  position: absolute;
+  top: -450px;
+  right: -450px;
+  z-index: 0;
+  overflow: visible;
 }
 .course .course-title {
   text-align: center;

@@ -3,17 +3,19 @@ import classImag1 from "../../../../assets/images/Class/classer1.jpg";
 import classImage2 from "../../../../assets/images/Class/classer2.jpg";
 import classImage3 from "../../../../assets/images/Class/classer3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaRegCircle } from "react-icons/fa6";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Autoplay} from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Courses = () => {
   return (
     <div className="course">
+      <FaRegCircle className="icon" />
       <div className="container mx-auto">
         <div className="course-title">
           <h3>Courses</h3>
@@ -28,7 +30,7 @@ const Courses = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination,Autoplay]}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide>

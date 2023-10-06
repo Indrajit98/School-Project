@@ -26,46 +26,61 @@
       stroke: $bg;
       stroke-width: 50px;
       overflow: visible;
+      transition: 0.3s;
+      &:hover {
+        bottom: 50px;
+      }
     }
     .image {
-    object-fit: cover; 
+      object-fit: cover;
     }
   }
   .right {
     .right-content {
       .card {
- 
         .card-icon1 {
-          @include card-icon($card-icon1,$card-icon1-bg, 3px solid $card-icon1-bg);
-
+          @include card-icon(
+            $card-icon1,
+            $card-icon1-bg,
+            3px solid $card-icon1-bg
+          );
         }
         .card-icon2 {
-          @include card-icon($card-icon2,$card-icon2-bg, 3px solid $card-icon2-bg);
-      
+          @include card-icon(
+            $card-icon2,
+            $card-icon2-bg,
+            3px solid $card-icon2-bg
+          );
         }
         .card-icon3 {
-          @include card-icon($card-icon3,$card-icon3-bg, 3px solid $card-icon3-bg);
-        
+          @include card-icon(
+            $card-icon3,
+            $card-icon3-bg,
+            3px solid $card-icon3-bg
+          );
         }
         .card-icon4 {
-          @include card-icon($card-icon4,$card-icon4-bg, 3px solid $card-icon4-bg);
-         
+          @include card-icon(
+            $card-icon4,
+            $card-icon4-bg,
+            3px solid $card-icon4-bg
+          );
         }
-        &:hover{
+        &:hover {
           cursor: pointer;
-          .card-icon1{
+          .card-icon1 {
             @include card-hover($card-icon1);
           }
-          .card-icon2{
+          .card-icon2 {
             @include card-hover($card-icon2);
           }
-          .card-icon3{
+          .card-icon3 {
             @include card-hover($card-icon3);
           }
-          .card-icon4{
+          .card-icon4 {
             @include card-hover($card-icon4);
           }
-          h5{
+          h5 {
             color: $textColor;
           }
         }

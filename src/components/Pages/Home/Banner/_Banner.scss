@@ -5,7 +5,7 @@
   .icon {
     width: 1000px;
     height: 900px;
-    color: $bannerIcon;
+    color: $banner-icon;
     position: absolute;
     top: -500px;
     left: -250px;
@@ -39,46 +39,30 @@
     .right-content {
       .card {
         .card-icon1 {
-          @include card-icon(
-            $card-icon1,
-            $card-icon1-bg,
-            3px solid $card-icon1-bg
-          );
+          @include card-icon($icon1, $icon1-bg, $icon1-bg);
         }
         .card-icon2 {
-          @include card-icon(
-            $card-icon2,
-            $card-icon2-bg,
-            3px solid $card-icon2-bg
-          );
+          @include card-icon($icon2, $icon2-bg, $icon2-bg);
         }
         .card-icon3 {
-          @include card-icon(
-            $card-icon3,
-            $card-icon3-bg,
-            3px solid $card-icon3-bg
-          );
+          @include card-icon($icon3, $icon3-bg, $icon3-bg);
         }
         .card-icon4 {
-          @include card-icon(
-            $card-icon4,
-            $card-icon4-bg,
-            3px solid $card-icon4-bg
-          );
+          @include card-icon($icon4, $icon4-bg, $icon4-bg);
         }
         &:hover {
           cursor: pointer;
           .card-icon1 {
-            @include card-hover($card-icon1);
+            @include card-hover($icon1);
           }
           .card-icon2 {
-            @include card-hover($card-icon2);
+            @include card-hover($icon2);
           }
           .card-icon3 {
-            @include card-hover($card-icon3);
+            @include card-hover($icon3);
           }
           .card-icon4 {
-            @include card-hover($card-icon4);
+            @include card-hover($icon4);
           }
           h5 {
             color: $textColor;

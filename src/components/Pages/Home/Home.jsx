@@ -3,6 +3,7 @@ import Wave from "react-wavify";
 import Sliders from "../../Shared/Slider/Sliders";
 import Banner from "./Banner/Banner";
 import Courses from "./Courses/Courses";
+import CareValue from "./CareValue/CareValue";
 
 const Home = () => {
   return (
@@ -63,6 +64,7 @@ const Home = () => {
       </div>
       <Banner />
       <Courses />
+      <CareValue/>
     </div>
   );
 };

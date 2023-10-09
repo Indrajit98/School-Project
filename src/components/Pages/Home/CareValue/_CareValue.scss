@@ -1,0 +1,94 @@
+
+.care-section {
+  padding: 100px 0;
+  position: relative;
+  .icon1 {
+    width: 1000px;
+    height: 900px;
+    color: $care-value-icon;
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    z-index: -1;
+  }
+  .icon2{
+    width: 100px;
+    height: 100px;
+    color: $bg;
+    position: absolute;
+    bottom: 80px;
+    left: 200px;
+  }
+  .icon3{
+    width: 50px;
+    height: 150px;
+    color: $icon6;
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+    z-index: -2;
+  }
+
+  .left {
+    // border: 1px solid rebeccapurple;
+  }
+  .right {
+    // border: 2px solid red;
+    .card {
+      display: flex;
+      margin: 20px 0;
+      padding-right: 20px;
+      .card-icon1 {
+        @include card-icon($icon1, $icon1-bg, $icon1-bg);
+        @include icon;
+      }
+      .card-icon2 {
+        @include card-icon($icon4, $icon4-bg, $icon4-bg);
+        @include icon;
+      }
+      .card-icon3 {
+        @include card-icon($icon3, $icon3-bg, $icon3-bg);
+        @include icon;
+      }
+      .card-icon4 {
+        @include card-icon($icon2, $icon2-bg, $icon2-bg);
+        @include icon;
+      }
+      .card-icon5 {
+        @include card-icon($icon5, $icon5-bg, $icon5-bg);
+        @include icon;
+      }
+      .card-icon6 {
+        @include card-icon($icon6, $icon6-bg, $icon6-bg);
+        @include icon;
+      }
+      .card-content {
+        align-items: first baseline;
+        padding-left: 15px;
+        h5 {
+          margin-bottom: 5px;
+        }
+      }
+      &:hover {
+        .card-icon1 {
+          @include card-hover($icon1);
+        }
+        .card-icon2 {
+          @include card-hover($icon4);
+        }
+        .card-icon3 {
+          @include card-hover($icon3);
+        }
+        .card-icon4 {
+          @include card-hover($icon2);
+        }
+        .card-icon5 {
+          @include card-hover($icon5);
+        }
+        .card-icon6 {
+          @include card-hover($icon6);
+        }
+      }
+    }
+  }
+}

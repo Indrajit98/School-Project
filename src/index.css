@@ -307,12 +307,12 @@ p {
 }
 .banner .right .right-content .card .card-icon1 {
   font-size: 80px;
-  background-color: #feefcf;
-  border: 3px solid #feefcf;
   color: #fab31c;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  background-color: #feefcf;
+  border: 2px solid #feefcf;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   border-radius: 20%;
   margin: 20px 0;
   display: flex;
@@ -322,12 +322,12 @@ p {
 }
 .banner .right .right-content .card .card-icon2 {
   font-size: 80px;
-  background-color: #FDD5D5;
-  border: 3px solid #FDD5D5;
   color: #f32c2c;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  background-color: #FDD5D5;
+  border: 2px solid #FDD5D5;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   border-radius: 20%;
   margin: 20px 0;
   display: flex;
@@ -337,12 +337,12 @@ p {
 }
 .banner .right .right-content .card .card-icon3 {
   font-size: 80px;
-  background-color: #F9DDEE;
-  border: 3px solid #F9DDEE;
   color: #df57a8;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  background-color: #F9DDEE;
+  border: 2px solid #F9DDEE;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   border-radius: 20%;
   margin: 20px 0;
   display: flex;
@@ -352,12 +352,12 @@ p {
 }
 .banner .right .right-content .card .card-icon4 {
   font-size: 80px;
-  background-color: #DCF4FC;
-  border: 3px solid #DCF4FC;
   color: #51c9ee;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  background-color: #DCF4FC;
+  border: 2px solid #DCF4FC;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   border-radius: 20%;
   margin: 20px 0;
   display: flex;
@@ -372,25 +372,25 @@ p {
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: #fff;
-  border: 3px dashed #fab31c;
+  border: 2px dashed #fab31c;
 }
 .banner .right .right-content .card:hover .card-icon2 {
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: #fff;
-  border: 3px dashed #f32c2c;
+  border: 2px dashed #f32c2c;
 }
 .banner .right .right-content .card:hover .card-icon3 {
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: #fff;
-  border: 3px dashed #df57a8;
+  border: 2px dashed #df57a8;
 }
 .banner .right .right-content .card:hover .card-icon4 {
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: #fff;
-  border: 3px dashed #51c9ee;
+  border: 2px dashed #51c9ee;
 }
 .banner .right .right-content .card:hover h5, .banner .right .right-content .card:hover h4 {
   color: #FAB219;
@@ -405,7 +405,7 @@ p {
 .course .icon {
   width: 900px;
   height: 900px;
-  color: #F9DDEE;
+  color: #FDD5D5;
   position: absolute;
   top: -450px;
   right: -450px;
@@ -500,4 +500,197 @@ p {
 .course .swiper .course-card .card:hover .btn {
   bottom: 0;
   background-color: #FAAF11;
+}
+
+.care-section {
+  padding: 100px 0;
+  position: relative;
+}
+.care-section .icon1 {
+  width: 1000px;
+  height: 900px;
+  color: #DCF4FC;
+  position: absolute;
+  top: -300px;
+  left: -200px;
+  z-index: -1;
+}
+.care-section .icon2 {
+  width: 100px;
+  height: 100px;
+  color: #FAAF11;
+  position: absolute;
+  bottom: 80px;
+  left: 200px;
+}
+.care-section .icon3 {
+  width: 50px;
+  height: 150px;
+  color: #2D7CF1;
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  z-index: -2;
+}
+.care-section .right .card {
+  display: flex;
+  margin: 20px 0;
+  padding-right: 20px;
+}
+.care-section .right .card .card-icon1 {
+  font-size: 80px;
+  color: #fab31c;
+  background-color: #feefcf;
+  border: 2px solid #feefcf;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-icon2 {
+  font-size: 80px;
+  color: #51c9ee;
+  background-color: #DCF4FC;
+  border: 2px solid #DCF4FC;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-icon3 {
+  font-size: 80px;
+  color: #df57a8;
+  background-color: #F9DDEE;
+  border: 2px solid #F9DDEE;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-icon4 {
+  font-size: 80px;
+  color: #f32c2c;
+  background-color: #FDD5D5;
+  border: 2px solid #FDD5D5;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-icon5 {
+  font-size: 80px;
+  color: #E2E716;
+  background-color: #F9FAD0;
+  border: 2px solid #F9FAD0;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-icon6 {
+  font-size: 80px;
+  color: #2D7CF1;
+  background-color: #D5E5FC;
+  border: 2px solid #D5E5FC;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+}
+.care-section .right .card .card-content {
+  align-items: first baseline;
+  padding-left: 15px;
+}
+.care-section .right .card .card-content h5, .care-section .right .card .card-content h4 {
+  margin-bottom: 5px;
+}
+.care-section .right .card:hover .card-icon1 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #fab31c;
+}
+.care-section .right .card:hover .card-icon2 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #51c9ee;
+}
+.care-section .right .card:hover .card-icon3 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #df57a8;
+}
+.care-section .right .card:hover .card-icon4 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #f32c2c;
+}
+.care-section .right .card:hover .card-icon5 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #E2E716;
+}
+.care-section .right .card:hover .card-icon6 {
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border: 2px dashed #2D7CF1;
 }/*# sourceMappingURL=index.css.map */

@@ -28,12 +28,12 @@
 }
 @mixin card-icon($color, $bg, $border) {
   font-size: 80px;
-  background-color: $bg;
-  border: $border;
   color: $color;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  background-color: $bg;
+  border: 2px solid $border;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   border-radius: 20%;
   margin: 20px 0;
   display: flex;
@@ -45,7 +45,13 @@
   border-radius: 50%;
   transition: 0.1s ease-in-out;
   background-color: $white;
-  border: 3px dashed $border;
+  border: 2px dashed $border;
+}
+@mixin icon{
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding:20px
 }
 
 @mixin price {

@@ -532,6 +532,9 @@ p {
   left: 35%;
   z-index: -2;
 }
+.care-section .left {
+  padding-right: 5px;
+}
 .care-section .right .card {
   display: flex;
   margin: 20px 0;

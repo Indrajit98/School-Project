@@ -25,7 +25,7 @@ const Banner = () => {
               <h3>Who we are</h3>
               <h2>The best playschool for your kid</h2>
               <div className="grid grid-cols-2 gap-4">
-                <div className=" card">
+                <div className=" card" data-aos="zoom-in-right">
                   <div className="card-icon1">
                     <TbAbc />
                   </div>
@@ -35,7 +35,7 @@ const Banner = () => {
                   </p>
                 </div>
 
-                <div className=" card">
+                <div className=" card" data-aos="zoom-in-left">
                   <div className="card-icon2">
                     <GiExpense />
                   </div>
@@ -44,7 +44,7 @@ const Banner = () => {
                     By creating a safe, consistent and welcoming environment
                   </p>
                 </div>
-                <div className=" card">
+                <div className=" card" data-aos="zoom-in-right">
                   <div className="card-icon3">
                     <GiBookCover />
                   </div>
@@ -53,7 +53,7 @@ const Banner = () => {
                     By creating a safe, consistent and welcoming environment
                   </p>
                 </div>
-                <div className=" card">
+                <div className=" card" data-aos="zoom-in-left">
                   <div className="card-icon4">
                     <IoLibraryOutline />
                   </div>

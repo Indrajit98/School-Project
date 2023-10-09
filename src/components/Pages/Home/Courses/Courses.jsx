@@ -34,7 +34,7 @@ const Courses = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="course-card  ">
+              <div className="course-card" data-aos="fade-up">
                 <div className="card">
                   <div className="card-image">
                     <img src={classImage3} alt="" />
@@ -69,7 +69,7 @@ const Courses = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="course-card  ">
+              <div className="course-card" data-aos="zoom-in">
                 <div className="card">
                   <div className="card-image">
                     <img src={classImag1} alt="" />
@@ -104,7 +104,7 @@ const Courses = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="course-card  ">
+              <div className="course-card" data-aos="fade-up">
                 <div className="card">
                   <div className="card-image">
                     <img src={classImage2} alt="" />

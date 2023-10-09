@@ -14,16 +14,19 @@ const CareValue = () => {
             <h2>We’re redefining early child care education</h2>
           </div>
           <div className="right col-span-7 grid grid-cols-2">
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-right">
               <div className="card-icon1">
                 <span>01</span>
               </div>
               <div className="card-content">
                 <h5>Active learning</h5>
-                <p>Childrens love this class room as it has many toys and educational games.</p>
+                <p>
+                  Childrens love this class room as it has many toys and
+                  educational games.
+                </p>
               </div>
             </div>
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-left">
               <div className="card-icon2">
                 <span>02</span>
               </div>
@@ -32,7 +35,7 @@ const CareValue = () => {
                 <p>By creating a safe, consistent and welcoming environment</p>
               </div>
             </div>
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-right">
               <div className="card-icon3">
                 <span>03</span>
               </div>
@@ -41,7 +44,7 @@ const CareValue = () => {
                 <p>By creating a safe, consistent and welcoming environment</p>
               </div>
             </div>
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-left">
               <div className="card-icon4">
                 <span>04</span>
               </div>
@@ -50,7 +53,7 @@ const CareValue = () => {
                 <p>By creating a safe, consistent and welcoming environment</p>
               </div>
             </div>
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-right">
               <div className="card-icon5">
                 <span>05</span>
               </div>
@@ -59,7 +62,7 @@ const CareValue = () => {
                 <p>By creating a safe, consistent and welcoming environment</p>
               </div>
             </div>
-            <div className=" card">
+            <div className=" card" data-aos="zoom-in-left">
               <div className="card-icon6">
                 <span>06</span>
               </div>

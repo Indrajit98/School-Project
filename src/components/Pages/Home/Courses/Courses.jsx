@@ -22,7 +22,7 @@ const Courses = () => {
           <h2>Popular Class</h2>
         </div>
         {/* large device  */}
-        <div className=" lg:block md:hidden">
+        <div className="lg:block hidden">
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -245,8 +245,9 @@ const Courses = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+
               {/* small devise  */}
-        <div className=" lg:hidden sm:block">
+        <div className="lg:hidden sm:block">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}

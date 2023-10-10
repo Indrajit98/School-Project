@@ -94,3 +94,50 @@
     }
   }
 }
+@media (min-width: 320px) and (max-width: 425px){
+  .care-section{
+    padding: 50px 0;
+    overflow: hidden;
+    .icon2{
+      width: 300px;
+      height: 300px;
+      stroke-width: 30px;
+      overflow: visible;
+      bottom:-100px;
+      left: -100px;
+      opacity: .5;
+    }
+    .icon3{
+      opacity: 0;
+    }
+  
+    h2,h3{
+      font-size: 35px;
+      text-align: center;
+      line-height: 45px;
+      letter-spacing: 0px;
+    }
+    .card{
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+}
+@media (min-width: 426px) and (max-width: 768px){
+  .care-section{
+    padding: 50px 0;
+  }
+  .icon2,.icon3{
+    opacity: 0;
+  }
+  h2,h3{
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 0;
+  }
+
+ 
+}

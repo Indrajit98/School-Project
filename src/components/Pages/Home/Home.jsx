@@ -4,6 +4,7 @@ import Sliders from "../../Shared/Slider/Sliders";
 import Banner from "./Banner/Banner";
 import Courses from "./Courses/Courses";
 import CareValue from "./CareValue/CareValue";
+import Teacher from "./Teacher/Teacher";
 
 const Home = () => {
   return (
@@ -65,6 +66,7 @@ const Home = () => {
       <Banner />
       <Courses />
       <CareValue/>
+      <Teacher/>
     </div>
   );
 };

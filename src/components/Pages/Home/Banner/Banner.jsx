@@ -11,7 +11,7 @@ const Banner = () => {
     <div className="banner">
       <FaRegCircle className="icon" />
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4">
           <div className="left">
             <div className="image">
               <img src={banner} alt="" />
@@ -24,7 +24,7 @@ const Banner = () => {
             <div className="right-content">
               <h3>Who we are</h3>
               <h2>The best playschool for your kid</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className=" card" data-aos="zoom-in-right">
                   <div className="card-icon1">
                     <TbAbc />

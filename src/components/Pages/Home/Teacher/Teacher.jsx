@@ -21,8 +21,8 @@ const Teacher = () => {
           <h3>Meet our staffs</h3>
           <h2>Excellent teacher</h2>
         </div>
-        <div className=" grid grid-cols-4 gap-5 pt-16">
-          
+        <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-5 pt-16">
+
           <div className="teacher-info">
             <div className="card1">
               <div className="teacher-social">

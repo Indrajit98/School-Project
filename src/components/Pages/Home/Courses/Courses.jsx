@@ -21,7 +21,8 @@ const Courses = () => {
           <h3>Courses</h3>
           <h2>Popular Class</h2>
         </div>
-        <>
+        {/* large device  */}
+        <div className=" lg:block md:hidden">
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -243,7 +244,231 @@ const Courses = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-        </>
+        </div>
+              {/* small devise  */}
+        <div className=" lg:hidden sm:block">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            centeredSlides={false}
+            Autoplay={{ delay: 2500, disableOnInteraction: false }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="course-card" data-aos="fade-up">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImage3} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="course-card" data-aos="zoom-in">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImag1} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="course-card" data-aos="fade-up">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImage2} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="course-card  ">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImage3} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="course-card  ">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImag1} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="course-card  ">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={classImage3} alt="" />
+                  </div>
+                  <div className="course-content">
+                    <h4 className="class-price">FREE</h4>
+                    <h4>Alphabet Matching Class</h4>
+                    <p>
+                      The perfect class for your child with the best staff and
+                      best teachers.
+                    </p>
+                    <div className="class-meta-list">
+                      <ul>
+                        <li>
+                          <span className="meta-title">Age</span>
+                          <span className="value">3-5 year</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Time</span>
+                          <span className="value">8-10</span>
+                        </li>
+                        <li>
+                          <span className="meta-title">Capacity</span>
+                          <span className="value">20 kids</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="btn">Join with Class</div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );

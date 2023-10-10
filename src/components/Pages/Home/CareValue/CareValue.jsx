@@ -9,11 +9,11 @@ const CareValue = () => {
       <FaRegCircle className="icon3" />
       <div className="container mx-auto py-100">
         <div className="grid grid-cols-12">
-          <div className="left col-span-5 ">
+          <div className="left lg:col-span-5 col-span-12 ">
             <h3>Our care value</h3>
             <h2>We’re redefining early child care education</h2>
           </div>
-          <div className="right col-span-7 grid grid-cols-2">
+          <div className="right lg:col-span-7 col-span-12 grid md:grid-cols-2">
             <div className=" card" data-aos="zoom-in-right">
               <div className="card-icon1">
                 <span>01</span>

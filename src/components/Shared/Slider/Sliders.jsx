@@ -25,7 +25,7 @@ const Sliders = () => {
               <h3>let your child</h3>
               <h1>Embark on a new journey </h1>
               <div className="btn" data-aos="zoom-in" >
-                find out more <FaCircleArrowRight className="ml-3" />{" "}
+                find out more <FaCircleArrowRight className="btn-icon"/>
               </div>
             </div>
             <div className="slider-image">
@@ -40,7 +40,7 @@ const Sliders = () => {
               <h3>let your child</h3>
               <h1>Fun & engaging learning </h1>
               <div className="btn" data-aos="zoom-in">
-                find out more <FaCircleArrowRight className="ml-3" />{" "}
+                find out more <FaCircleArrowRight className="btn-icon" />{" "}
               </div>
             </div>
             <div className="slider-image">
@@ -55,7 +55,7 @@ const Sliders = () => {
               <h3>let your child</h3>
               <h1>Creative kid’s world </h1>
               <div className="btn" data-aos="zoom-in">
-                find out more <FaCircleArrowRight className="ml-3" />{" "}
+                find out more <FaCircleArrowRight className="btn-icon"/>{" "}
               </div>
             </div>
             <div className="slider-image">

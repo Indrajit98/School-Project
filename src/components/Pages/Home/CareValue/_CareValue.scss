@@ -1,7 +1,7 @@
-
 .care-section {
   padding: 100px 0;
   position: relative;
+
   .icon1 {
     width: 1000px;
     height: 900px;
@@ -11,7 +11,8 @@
     left: -200px;
     z-index: -1;
   }
-  .icon2{
+
+  .icon2 {
     width: 100px;
     height: 100px;
     color: $bg;
@@ -19,7 +20,8 @@
     bottom: 80px;
     left: 200px;
   }
-  .icon3{
+
+  .icon3 {
     width: 50px;
     height: 150px;
     color: $icon6;
@@ -31,62 +33,78 @@
 
   .left {
     // border: 1px solid rebeccapurple;
-    padding-right:5px;
+    padding-right: 5px;
 
   }
+
   .right {
+
     // border: 2px solid red;
-    .card{
+    .card {
       display: flex;
       margin: 20px 0;
       padding-right: 20px;
+
       .card-icon1 {
         @include card-icon($icon1, $icon1-bg, $icon1-bg);
         @include icon;
       }
+
       .card-icon2 {
         @include card-icon($icon4, $icon4-bg, $icon4-bg);
         @include icon;
       }
+
       .card-icon3 {
         @include card-icon($icon3, $icon3-bg, $icon3-bg);
         @include icon;
       }
+
       .card-icon4 {
         @include card-icon($icon2, $icon2-bg, $icon2-bg);
         @include icon;
       }
+
       .card-icon5 {
         @include card-icon($icon5, $icon5-bg, $icon5-bg);
         @include icon;
       }
+
       .card-icon6 {
         @include card-icon($icon6, $icon6-bg, $icon6-bg);
         @include icon;
       }
+
       .card-content {
         align-items: first baseline;
         padding-left: 15px;
+
         h5 {
           margin-bottom: 5px;
         }
       }
+
       &:hover {
         .card-icon1 {
           @include card-hover($icon1);
         }
+
         .card-icon2 {
           @include card-hover($icon4);
         }
+
         .card-icon3 {
           @include card-hover($icon3);
         }
+
         .card-icon4 {
           @include card-hover($icon2);
         }
+
         .card-icon5 {
           @include card-hover($icon5);
         }
+
         .card-icon6 {
           @include card-hover($icon6);
         }
@@ -94,30 +112,35 @@
     }
   }
 }
-@media (min-width: 320px) and (max-width: 425px){
-  .care-section{
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .care-section {
     padding: 50px 0;
     overflow: hidden;
-    .icon2{
+
+    .icon2 {
       width: 300px;
       height: 300px;
       stroke-width: 30px;
       overflow: visible;
-      bottom:-100px;
+      bottom: -100px;
       left: -100px;
       opacity: .5;
     }
-    .icon3{
+
+    .icon3 {
       opacity: 0;
     }
-  
-    h2,h3{
+
+    h2,
+    h3 {
       font-size: 35px;
       text-align: center;
-      line-height: 45px;
+      line-height: 40px;
       letter-spacing: 0px;
     }
-    .card{
+
+    .card {
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
@@ -125,19 +148,24 @@
   }
 
 }
-@media (min-width: 426px) and (max-width: 768px){
-  .care-section{
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .care-section {
     padding: 50px 0;
   }
-  .icon2,.icon3{
+
+  .icon2,
+  .icon3 {
     opacity: 0;
   }
-  h2,h3{
+
+  h2,
+  h3 {
     font-size: 45px;
     text-align: center;
     line-height: 45px;
     letter-spacing: 0;
   }
 
- 
+
 }

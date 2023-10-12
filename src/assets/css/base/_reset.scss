@@ -5,20 +5,17 @@
 }
 // common sass
 .btn {
-  width: 30%;
-  display: flex;
   border: 1px solid $bg;
   background-color: $bg;
   text-align: center;
+  display: inline-block;
   font-size: 15px;
   color: $white;
   font-weight: 500;
-  line-height: 60px;
-  padding: 0 30px;
+  padding: 15px 30px;
   border-radius: 5px;
   text-transform: capitalize;
   margin: 40px 0;
-  align-items: center;
   cursor: pointer;
   transition: 0.3s;
   &:hover {

@@ -35,7 +35,7 @@ h3 {
   font-family: Sacramento;
   color: #FAB219;
   font-size: 60px;
-  line-height: 70px;
+  line-height: 60px;
   font-weight: 400;
 }
 
@@ -68,20 +68,17 @@ p {
 }
 
 .btn {
-  width: 30%;
-  display: flex;
   border: 1px solid #FAAF11;
   background-color: #FAAF11;
   text-align: center;
+  display: inline-block;
   font-size: 15px;
   color: #fff;
   font-weight: 500;
-  line-height: 60px;
-  padding: 0 30px;
+  padding: 15px 30px;
   border-radius: 5px;
   text-transform: capitalize;
   margin: 40px 0;
-  align-items: center;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -214,6 +211,20 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-content h3 {
+  margin-bottom: 30px;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-content .btn {
+  width: 30%;
+  padding-left: 0px;
+  position: relative;
+}
+.swiper .swiper-wrapper .swiper-slide .slider-content .btn .btn-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .swiper .swiper-wrapper .swiper-slide .slider-image {
   height: 100%;
@@ -814,10 +825,11 @@ p {
   .care-section .icon3 {
     opacity: 0;
   }
-  .care-section h2, .care-section h3 {
+  .care-section h2,
+  .care-section h3 {
     font-size: 35px;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
     letter-spacing: 0px;
   }
   .care-section .card {
@@ -830,10 +842,12 @@ p {
   .care-section {
     padding: 50px 0;
   }
-  .icon2, .icon3 {
+  .icon2,
+  .icon3 {
     opacity: 0;
   }
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 45px;
     text-align: center;
     line-height: 45px;
@@ -845,18 +859,16 @@ p {
 }
 .teacher-section .title {
   text-align: center;
+  margin-bottom: 50px;
 }
 .teacher-section .teacher-info {
   text-align: center;
-}
-.teacher-section .teacher-info h4 {
-  padding: 20px 0 10px 0;
-  margin-bottom: 0;
 }
 .teacher-section .teacher-info .card1 {
   position: relative;
   overflow: hidden;
   background-color: #ef476f;
+  margin-bottom: 20px;
   z-index: 1;
 }
 .teacher-section .teacher-info .card1::before {
@@ -871,61 +883,15 @@ p {
   transition: 0.4s;
   transform: scaleX(0);
 }
-.teacher-section .teacher-info .card1 .icon {
-  width: 200px;
-  height: 200px;
-  color: #FAAF11;
-  position: absolute;
-  bottom: -200px;
-  right: -200px;
-  stroke-width: 20px;
-  overflow: visible;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card1 ul {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  right: -100px;
-  bottom: -100px;
-  width: 100px;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card1 ul li {
-  margin: 10px;
-  font-size: 22px;
-  color: #fff;
-}
-.teacher-section .teacher-info .card1:hover {
-  cursor: pointer;
-}
 .teacher-section .teacher-info .card1:hover::before {
   opacity: 0.5;
   transform: scaleX(1);
-}
-.teacher-section .teacher-info .card1:hover .icon {
-  bottom: -50px;
-  right: -50px;
-}
-.teacher-section .teacher-info .card1:hover ul {
-  right: 0px;
-  bottom: 10px;
-}
-.teacher-section .teacher-info .card1 .image {
-  height: 300px;
-}
-.teacher-section .teacher-info .card1 .image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0%;
-     object-position: 100% 0%;
-  width: 100%;
-  height: 100%;
 }
 .teacher-section .teacher-info .card2 {
   position: relative;
   overflow: hidden;
   background-color: #06d6a0;
+  margin-bottom: 20px;
   z-index: 1;
 }
 .teacher-section .teacher-info .card2::before {
@@ -940,61 +906,15 @@ p {
   transition: 0.4s;
   transform: scaleX(0);
 }
-.teacher-section .teacher-info .card2 .icon {
-  width: 200px;
-  height: 200px;
-  color: #FAAF11;
-  position: absolute;
-  bottom: -200px;
-  right: -200px;
-  stroke-width: 20px;
-  overflow: visible;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card2 ul {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  right: -100px;
-  bottom: -100px;
-  width: 100px;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card2 ul li {
-  margin: 10px;
-  font-size: 22px;
-  color: #fff;
-}
-.teacher-section .teacher-info .card2:hover {
-  cursor: pointer;
-}
 .teacher-section .teacher-info .card2:hover::before {
   opacity: 0.5;
   transform: scaleX(1);
-}
-.teacher-section .teacher-info .card2:hover .icon {
-  bottom: -50px;
-  right: -50px;
-}
-.teacher-section .teacher-info .card2:hover ul {
-  right: 0px;
-  bottom: 10px;
-}
-.teacher-section .teacher-info .card2 .image {
-  height: 300px;
-}
-.teacher-section .teacher-info .card2 .image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0%;
-     object-position: 100% 0%;
-  width: 100%;
-  height: 100%;
 }
 .teacher-section .teacher-info .card3 {
   position: relative;
   overflow: hidden;
   background-color: #118ab2;
+  margin-bottom: 20px;
   z-index: 1;
 }
 .teacher-section .teacher-info .card3::before {
@@ -1009,61 +929,15 @@ p {
   transition: 0.4s;
   transform: scaleX(0);
 }
-.teacher-section .teacher-info .card3 .icon {
-  width: 200px;
-  height: 200px;
-  color: #FAAF11;
-  position: absolute;
-  bottom: -200px;
-  right: -200px;
-  stroke-width: 20px;
-  overflow: visible;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card3 ul {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  right: -100px;
-  bottom: -100px;
-  width: 100px;
-  transition: 0.4s;
-}
-.teacher-section .teacher-info .card3 ul li {
-  margin: 10px;
-  font-size: 22px;
-  color: #fff;
-}
-.teacher-section .teacher-info .card3:hover {
-  cursor: pointer;
-}
 .teacher-section .teacher-info .card3:hover::before {
   opacity: 0.5;
   transform: scaleX(1);
-}
-.teacher-section .teacher-info .card3:hover .icon {
-  bottom: -50px;
-  right: -50px;
-}
-.teacher-section .teacher-info .card3:hover ul {
-  right: 0px;
-  bottom: 10px;
-}
-.teacher-section .teacher-info .card3 .image {
-  height: 300px;
-}
-.teacher-section .teacher-info .card3 .image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0%;
-     object-position: 100% 0%;
-  width: 100%;
-  height: 100%;
 }
 .teacher-section .teacher-info .card4 {
   position: relative;
   overflow: hidden;
   background-color: #073b4c;
+  margin-bottom: 20px;
   z-index: 1;
 }
 .teacher-section .teacher-info .card4::before {
@@ -1078,7 +952,11 @@ p {
   transition: 0.4s;
   transform: scaleX(0);
 }
-.teacher-section .teacher-info .card4 .icon {
+.teacher-section .teacher-info .card4:hover::before {
+  opacity: 0.5;
+  transform: scaleX(1);
+}
+.teacher-section .teacher-info .icon {
   width: 200px;
   height: 200px;
   color: #FAAF11;
@@ -1089,7 +967,7 @@ p {
   overflow: visible;
   transition: 0.4s;
 }
-.teacher-section .teacher-info .card4 ul {
+.teacher-section .teacher-info ul {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -1098,36 +976,32 @@ p {
   width: 100px;
   transition: 0.4s;
 }
-.teacher-section .teacher-info .card4 ul li {
+.teacher-section .teacher-info ul li {
   margin: 10px;
   font-size: 22px;
   color: #fff;
 }
-.teacher-section .teacher-info .card4:hover {
-  cursor: pointer;
-}
-.teacher-section .teacher-info .card4:hover::before {
-  opacity: 0.5;
-  transform: scaleX(1);
-}
-.teacher-section .teacher-info .card4:hover .icon {
-  bottom: -50px;
-  right: -50px;
-}
-.teacher-section .teacher-info .card4:hover ul {
-  right: 0px;
-  bottom: 10px;
-}
-.teacher-section .teacher-info .card4 .image {
+.teacher-section .teacher-info .image {
   height: 300px;
 }
-.teacher-section .teacher-info .card4 .image img {
+.teacher-section .teacher-info .image img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 100% 0%;
      object-position: 100% 0%;
   width: 100%;
   height: 100%;
+}
+.teacher-section .teacher-info:hover {
+  cursor: pointer;
+}
+.teacher-section .teacher-info:hover .icon {
+  bottom: -50px;
+  right: -50px;
+}
+.teacher-section .teacher-info:hover ul {
+  right: 0px;
+  bottom: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -1136,7 +1010,148 @@ p {
   }
   .teacher-section h2, .teacher-section h3 {
     font-size: 35px;
-    line-height: 45px;
+    line-height: 25px;
     letter-spacing: 0px;
+  }
+}
+.programs-section {
+  padding: 100px 0;
+  background-color: #FAF4EA;
+}
+.programs-section .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.programs-section .card {
+  text-align: center;
+}
+.programs-section .card .card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.programs-section .card .card-image .program-time1 {
+  width: 120px;
+  height: 120px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 10px;
+  border: 3px solid #ef476f;
+  color: #fff;
+  background-color: #ef476f;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+.programs-section .card .card-image .program-time2 {
+  width: 120px;
+  height: 120px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 10px;
+  border: 3px solid #06d6a0;
+  color: #fff;
+  background-color: #06d6a0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+.programs-section .card .card-image .program-time3 {
+  width: 120px;
+  height: 120px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 10px;
+  border: 3px solid #118ab2;
+  color: #fff;
+  background-color: #118ab2;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+.programs-section .card .card-image .program-time4 {
+  width: 120px;
+  height: 120px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 10px;
+  border: 3px solid #073b4c;
+  color: #fff;
+  background-color: #073b4c;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+.programs-section .card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.programs-section .card .card-content {
+  margin-bottom: 20px;
+}
+.programs-section .card .btn-icon {
+  width: 40px;
+  height: 40px;
+  color: #FAAF11;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.programs-section .card .btn-icon:hover {
+  color: #fff;
+  background-color: #FAAF11;
+  border-radius: 50%;
+  border: 1px solid #FAAF11;
+}
+.programs-section .card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .programs-section {
+    padding: 50px 0;
+  }
+  .programs-section h2,
+  .programs-section h3 {
+    font-size: 35px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .programs-section {
+    padding: 50px 0;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -5,6 +5,7 @@ import Banner from "./Banner/Banner";
 import Courses from "./Courses/Courses";
 import CareValue from "./CareValue/CareValue";
 import Teacher from "./Teacher/Teacher";
+import OurPrograms from "./OurPrograms/OurPrograms";
 
 const Home = () => {
   return (
@@ -67,6 +68,7 @@ const Home = () => {
       <Courses />
       <CareValue/>
       <Teacher/>
+      <OurPrograms/>
     </div>
   );
 };

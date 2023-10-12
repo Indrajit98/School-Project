@@ -5,11 +5,25 @@
   top: -200px;
   .swiper-wrapper {
     .swiper-slide {
-
       display: flex;
       justify-content: center;
       align-items: center;
-      
+      .slider-content {
+        h3{
+          margin-bottom: 30px;
+        }
+        .btn {
+          width: 30%;
+          padding-left:0px;
+          position: relative;
+          .btn-icon{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translate(-50% ,-50%);
+          }
+        }
+      }
       .slider-image {
         // border: 1px solid rebeccapurple;
         height: 100%;

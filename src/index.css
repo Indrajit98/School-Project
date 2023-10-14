@@ -87,6 +87,24 @@ p {
   background-color: transparent;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #FAF4EA;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FAAF11;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef476f;
+}
+
 .header {
   display: flex;
   align-items: center;

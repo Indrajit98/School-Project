@@ -1,26 +1,20 @@
+// base sass
+@import "../css/base/all";
 
-// base sass 
-@import '../css/base/all';
+@import "../../components/Shared/Navbar/Navbar";
 
-@import '../../components/Shared/Navbar/Navbar';
+@import "../../components/Pages/Home/Home";
 
-@import '../../components/Pages/Home/Home';
+@import "../../components/Shared/Slider/Slider";
 
-@import '../../components/Shared/Slider/Slider';
+@import "../../components/Pages/Home/Banner/Banner";
 
-@import '../../components/Pages/Home/Banner/Banner';
+@import "../../components/Pages/Home/Courses/Courses";
 
-@import '../../components/Pages/Home/Courses/Courses';
+@import "../../components/Pages/Home/CareValue/CareValue";
 
-@import '../../components/Pages/Home/CareValue/CareValue';
+@import "../../components/Pages/Home/Teacher/Teacher";
 
-@import '../../components/Pages/Home/Teacher/Teacher';
+@import "../../components/Pages/Home/OurPrograms/OurPrograms";
 
-@import '../../components/Pages/Home/OurPrograms/OurPrograms';
-
-@import '../../components/Pages/Home/PhotoViews/PhotoView';
-
-
-
-
-
+@import "../../components/Pages/Home/PhotoViews/PhotoView";

@@ -6,6 +6,7 @@ import Courses from "./Courses/Courses";
 import CareValue from "./CareValue/CareValue";
 import Teacher from "./Teacher/Teacher";
 import OurPrograms from "./OurPrograms/OurPrograms";
+import PhotoView from "./PhotoViews/PhotoViews";
 
 const Home = () => {
   return (
@@ -69,6 +70,7 @@ const Home = () => {
       <CareValue/>
       <Teacher/>
       <OurPrograms/>
+      <PhotoView/>
     </div>
   );
 };

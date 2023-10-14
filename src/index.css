@@ -1154,4 +1154,104 @@ p {
   .programs-section {
     padding: 50px 0;
   }
+}
+.photo-view-section {
+  padding: 100px 0;
+}
+.photo-view-section .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.photo-view-section .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px 200px 200px;
+  grid-gap: 5px;
+}
+.photo-view-section .items {
+  position: relative;
+  overflow: hidden;
+}
+.photo-view-section .items::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.3s;
+  pointer-events: none;
+}
+.photo-view-section .items .zoomIn {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.4s;
+  color: #fff;
+  z-index: 99;
+  pointer-events: none;
+}
+.photo-view-section .items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+  z-index: 999;
+}
+.photo-view-section .items:hover::after {
+  cursor: pointer;
+  opacity: 0.3;
+  z-index: 0;
+  transform: scale(1.2);
+}
+.photo-view-section .items:hover .zoomIn {
+  opacity: 1;
+  transform: scale(1.3);
+  pointer-events: none;
+}
+.photo-view-section .items:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.photo-view-section .items:nth-child(5) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.photo-view-section .items:nth-child(6) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .photo-view-section {
+    padding: 50px 0;
+  }
+  .photo-view-section h2,
+  .photo-view-section h3 {
+    font-size: 35px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .photo-view-section .gallery {
+    grid-template-rows: 100px 50px 50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .photo-view-section {
+    padding: 50px 0;
+  }
+  .photo-view-section .gallery {
+    grid-template-rows: 200px 100px 100px;
+  }
 }/*# sourceMappingURL=index.css.map */

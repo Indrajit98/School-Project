@@ -1,19 +1,3 @@
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: $bg2;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 20px;
-}
-::-webkit-scrollbar-thumb {
-  background: $bg;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: $bg3;
-}
-
 @import "./variables";
 @import "./typography";
 @import "./reset";

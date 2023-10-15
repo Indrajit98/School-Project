@@ -7,6 +7,7 @@ import CareValue from "./CareValue/CareValue";
 import Teacher from "./Teacher/Teacher";
 import OurPrograms from "./OurPrograms/OurPrograms";
 import PhotoView from "./PhotoViews/PhotoViews";
+import RecentPost from "./RecentPost/RecentPost";
 
 const Home = () => {
   return (
@@ -71,6 +72,7 @@ const Home = () => {
       <Teacher/>
       <OurPrograms/>
       <PhotoView/>
+      <RecentPost/>
     </div>
   );
 };

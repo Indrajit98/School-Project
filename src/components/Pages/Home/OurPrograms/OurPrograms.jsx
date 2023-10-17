@@ -16,9 +16,9 @@ const OurPrograms = () => {
                 </div>
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
                     <div className="card" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-     data-aos-duration="1000">
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000">
                         <div className="card-image">
                             <img src={image1} alt="" />
                             <div className='program-time1'>
@@ -36,9 +36,9 @@ const OurPrograms = () => {
                         </div>
                     </div>
 
-                    <div className="card"data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    <div className="card" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className="card-image">
                             <img src={image2} alt="" />
                             <div className='program-time2'>
@@ -56,9 +56,9 @@ const OurPrograms = () => {
                         </div>
                     </div>
 
-                    <div className="card"data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    <div className="card" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className="card-image">
                             <img src={image3} alt="" />
                             <div className='program-time3'>
@@ -77,9 +77,9 @@ const OurPrograms = () => {
                     </div>
 
                     <div className="card" data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-     data-aos-duration="1000">
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000">
                         <div className="card-image">
                             <img src={image4} alt="" />
                             <div className='program-time4'>

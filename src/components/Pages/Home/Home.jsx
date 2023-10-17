@@ -8,6 +8,7 @@ import Teacher from "./Teacher/Teacher";
 import OurPrograms from "./OurPrograms/OurPrograms";
 import PhotoView from "./PhotoViews/PhotoViews";
 import RecentPost from "./RecentPost/RecentPost";
+import ContactForm from "../../Shared/ContactForm/ContactForm";
 
 const Home = () => {
   return (
@@ -73,6 +74,7 @@ const Home = () => {
       <OurPrograms/>
       <PhotoView/>
       <RecentPost/>
+      <ContactForm/>
     </div>
   );
 };

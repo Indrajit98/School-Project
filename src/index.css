@@ -1167,10 +1167,16 @@ p {
     line-height: 25px;
     letter-spacing: 0px;
   }
+  .programs-section .card .card-image {
+    height: 300px;
+  }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .programs-section {
     padding: 50px 0;
+  }
+  .programs-section .card .card-image {
+    height: 300px;
   }
 }
 .photo-view-section {
@@ -1339,5 +1345,120 @@ p {
 @media (max-width: 768px) {
   .recent-post-section {
     padding: 0 0 50px 0;
+  }
+}
+.contact-section {
+  padding: 0 0 100px 0;
+}
+.contact-section .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-section .card .icon {
+  font-size: 80px;
+  color: #51c9ee;
+  background-color: #DCF4FC;
+  border: 2px solid #DCF4FC;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+.contact-section .card h4,
+.contact-section .card p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.contact-section .card span {
+  color: #51c9ee;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-section .contact-form {
+  background-color: #FAF4EA;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 10px;
+}
+.contact-section .contact-form label,
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 1px solid rgba(207, 207, 207, 0.5333333333);
+}
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus {
+  outline: 2px solid #51c9ee;
+}
+.contact-section .contact-form textarea {
+  height: 150px;
+  margin-bottom: 40px;
+}
+.contact-section .contact-form .input-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-section .contact-form .input-name .name {
+  width: 48%;
+}
+.contact-section .contact-form .btn {
+  margin: 0;
+}
+.contact-section .contact-form .btn:hover {
+  color: #FAAF11;
+}
+
+@media (max-width: 425px) {
+  .contact-section {
+    padding: 50px 0;
+    padding: 0 0 50px 0;
+  }
+  .contact-section .title h2,
+  .contact-section .title h3 {
+    font-size: 35px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .contact-section .card {
+    display: flex;
+    align-items: center;
+  }
+  .contact-section .card .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .contact-section .contact-form {
+    padding: 20px;
+  }
+  .contact-section .contact-form .input-name {
+    flex-direction: column;
+  }
+  .contact-section .contact-form .input-name .name {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section .card {
+    margin: 0 10px;
   }
 }/*# sourceMappingURL=index.css.map */

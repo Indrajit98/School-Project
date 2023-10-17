@@ -86,3 +86,9 @@
   top: -45px;
   right: 40px;
 }
+@mixin btn-cion ($color) {
+  width: 40px;
+  height: 40px;
+  color: $color;
+  margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+.footer-section {
+    padding: 100px 0;
+    background-color: $bg2;
+
+    .menu {
+        @include menu;
+        margin-bottom: 30px;
+    }
+
+    .social-icon {
+        ul {
+            li {
+                font-size: 32px;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-section {
+        padding: 50px 0;
+
+        .menu {
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 50px 0;
+    }
+}

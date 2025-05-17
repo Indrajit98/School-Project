@@ -11,7 +11,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
- 
 
   return (
     <div className="container mx-auto">
@@ -19,6 +18,7 @@ const Navbar = () => {
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
+
         <div className="menu">
           <ul>
             <li className="active">
@@ -66,42 +66,40 @@ const Navbar = () => {
           <p>Have a any question ?</p>
           <span>+880-1760272507</span>
         </div>
-
         {/* moble menu  */}
-
         <div className="mobile-menu" onClick={toggleMenu}>
           {isOpen ? <>
             <div className="mobile-XMark">
-              <FaXmark /> 
+              <FaXmark />
             </div>
             <div className="mobile-content">
-            <ul>
-              <li className="active">
-                <Link>Home</Link>
-              </li>
-              <li>
-                <Link>Curriculum</Link>
-              </li>
-              <li>
-                <Link>Classes</Link>
-              </li>
-              <li>
-                <Link>About Us</Link>
-              </li>
-              <li>
-                <Link>Blog</Link>
-              </li>
-              <li>
-                <Link>Page</Link>
-              </li>
-              <li>
-                <Link>login</Link>
-              </li>
-            </ul>
-          </div>
-          </>: 
+              <ul>
+                <li className="active">
+                  <Link>Home</Link>
+                </li>
+                <li>
+                  <Link>Curriculum</Link>
+                </li>
+                <li>
+                  <Link>Classes</Link>
+                </li>
+                <li>
+                  <Link>About Us</Link>
+                </li>
+                <li>
+                  <Link>Blog</Link>
+                </li>
+                <li>
+                  <Link>Page</Link>
+                </li>
+                <li>
+                  <Link>login</Link>
+                </li>
+              </ul>
+            </div>
+          </> :
             <div className="hamburger">
-                <FaAlignJustify />
+              <FaAlignJustify />
             </div>
           }
         </div>

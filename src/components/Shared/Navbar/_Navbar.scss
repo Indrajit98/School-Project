@@ -4,8 +4,6 @@
   justify-content: space-between;
   padding: 20px 0;
 
-  .logo {}
-
   .menu {
     @include menu();
   }
@@ -30,20 +28,31 @@
     .mobile-XMark {
       overflow: hidden;
       position: absolute;
-      top: -12px;
+      top: 15px;
       right: 0;
       z-index: 999;
+      float: right;
     }
 
     .mobile-content {
       position: absolute;
-      width: 50%;
+      width: 100%;
       right: 0px;
-      top: -28px;
-      background-color: red;
-      opacity: 0.3;
-      transition: 0.9s;
-      z-index: 999;
+      top: 0px;
+      background-color: $bg;
+      z-index: 222;
+      animation: right-to-left 1s;
+
+      @keyframes right-to-left {
+        0% {
+          left: 500px;
+        }
+
+        100% {
+          left: 0px;
+        }
+      }
+
       ul {
         margin-top: 20px;
         padding: 20px;
@@ -54,15 +63,23 @@
           padding: 10px 0;
           z-index: 999;
           color: $white;
+          font-size: 18px;
         }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -300px;
       }
     }
 
     .hamburger {
       overflow: hidden;
       position: absolute;
-      top: -12px;
+      top: 15px;
       right: 0;
+      z-index: 999;
     }
   }
 }
@@ -71,11 +88,9 @@
   .header {
     padding: 0;
 
-    .menu {
-      display: none;
-    }
-
-    .number {
+    .menu,
+    .number,
+    .logo {
       display: none;
     }
 

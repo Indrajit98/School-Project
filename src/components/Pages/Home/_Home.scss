@@ -1,5 +1,4 @@
 .home{
-    // border: 2px solid yellowgreen;
     position: relative;
     overflow: hidden;
     .background-wavify{
@@ -7,7 +6,6 @@
         position: relative;
         margin-top: 40px;
         height: 200px;
-        // border: 2px solid royalblue;
         .wave1,.wave2,.wave3,.wave4{
             height: 200px;
             position: absolute;   
@@ -18,7 +16,6 @@
     .slider{
        background-color:$wavify4;
        height:500px;
-    //    border: 2px solid goldenrod;
        position: relative;
     }
 }

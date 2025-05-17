@@ -156,19 +156,27 @@ p {
 .header .mobile-menu .mobile-XMark {
   overflow: hidden;
   position: absolute;
-  top: -12px;
+  top: 15px;
   right: 0;
   z-index: 999;
+  float: right;
 }
 .header .mobile-menu .mobile-content {
   position: absolute;
-  width: 50%;
+  width: 100%;
   right: 0px;
-  top: -28px;
-  background-color: red;
-  opacity: 0.3;
-  transition: 0.9s;
-  z-index: 999;
+  top: 0px;
+  background-color: #FAAF11;
+  z-index: 222;
+  animation: right-to-left 1s;
+}
+@keyframes right-to-left {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 .header .mobile-menu .mobile-content ul {
   margin-top: 20px;
@@ -180,22 +188,28 @@ p {
   padding: 10px 0;
   z-index: 999;
   color: #fff;
+  font-size: 18px;
+}
+.header .mobile-menu .mobile-content::after {
+  content: "";
+  position: absolute;
+  right: -300px;
 }
 .header .mobile-menu .hamburger {
   overflow: hidden;
   position: absolute;
-  top: -12px;
+  top: 15px;
   right: 0;
+  z-index: 999;
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 0;
   }
-  .header .menu {
-    display: none;
-  }
-  .header .number {
+  .header .menu,
+  .header .number,
+  .header .logo {
     display: none;
   }
   .header .mobile-menu {
@@ -263,8 +277,7 @@ p {
 .swiper .swiper-wrapper .swiper-slide .slider-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 @keyframes example {
@@ -275,26 +288,44 @@ p {
     top: 0px;
   }
 }
-.swiper .swiper-button-prev,
 .swiper .swiper-button-next {
+  left: 50%;
   background-color: #fff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   transition: 0.3s;
+  transform: translateY(300px);
 }
-.swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
   font-size: 18px;
   font-weight: bold;
   color: black;
 }
-.swiper .swiper-button-prev:hover,
 .swiper .swiper-button-next:hover {
   background-color: #FAAF11;
 }
-.swiper .swiper-button-prev:hover::after,
 .swiper .swiper-button-next:hover::after {
+  color: #fff;
+}
+.swiper .swiper-button-prev {
+  left: 40%;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  transform: translateY(300px);
+}
+.swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.swiper .swiper-button-prev:hover {
+  background-color: #FAAF11;
+}
+.swiper .swiper-button-prev:hover::after {
   color: #fff;
 }
 
@@ -334,8 +365,7 @@ p {
   bottom: 50px;
 }
 .banner .left .image {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .banner .right .right-content .card .card-icon1 {
   font-size: 80px;
@@ -1006,10 +1036,8 @@ p {
   height: 300px;
 }
 .teacher-section .teacher-info .image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0%;
-     object-position: 100% 0%;
+  object-fit: cover;
+  object-position: 100% 0%;
   width: 100%;
   height: 100%;
 }
@@ -1133,10 +1161,8 @@ p {
 .programs-section .card .card-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0;
-     object-position: 100% 0;
+  object-fit: cover;
+  object-position: 100% 0;
   transform: scale(1);
   transition: 0.3s;
 }
@@ -1228,10 +1254,8 @@ p {
 .photo-view-section .items img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 0;
-     object-position: 100% 0;
+  object-fit: cover;
+  object-position: 100% 0;
   z-index: 999;
 }
 .photo-view-section .items:hover::after {

@@ -72,7 +72,7 @@
         }
 
         .btn-icon {
-            @include btn-cion($bg);
+            @include btn-icon($bg);
             margin-bottom: 20px;
 
             &:hover {

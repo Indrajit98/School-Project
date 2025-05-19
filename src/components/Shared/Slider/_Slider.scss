@@ -1,12 +1,13 @@
-
-@mixin swiper-button($left){
-  left: $left;
+@mixin swiper-button($side) {
+  left: $side;
   background-color: $white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
   transform: translateY(300px);
+  position: absolute;
+  bottom: 0;
   &::after {
     font-size: 18px;
     font-weight: bold;
@@ -20,7 +21,6 @@
   }
 }
 
-
 .swiper {
   width: 100%;
   height: 700px;
@@ -33,18 +33,18 @@
       justify-content: center;
       align-items: center;
       .slider-content {
-        h3{
+        h3 {
           margin-bottom: 30px;
         }
         .btn {
           width: 30%;
-          padding-left:0px;
+          padding-left: 0px;
           position: relative;
-          .btn-icon{
+          .btn-icon {
             position: absolute;
             right: 20px;
             top: 50%;
-            transform: translate(-50% ,-50%);
+            transform: translate(-50%, -50%);
           }
         }
       }
@@ -79,10 +79,84 @@
     }
   }
   .swiper-button-next {
-    @include swiper-button(50%);
-    
+    @include swiper-button(5%);
   }
   .swiper-button-prev {
-    @include swiper-button(40%);
+    @include swiper-button(1%);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .swiper {
+    display: none;
+  }
+}
+@media (min-width: 426px) and (max-width: 770px) {
+  @mixin swiper-button($side) {
+  left: $side;
+  background-color: $white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  transform: translateY(300px);
+  position: absolute;
+  top: 80px;
+  &::after {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  &:hover {
+    background-color: $bg;
+    &::after {
+      color: $white;
+    }
+  }
+}
+  .swiper {
+    height: 400px;
+    padding: 15px;
+    .swiper-wrapper {
+      .swiper-slide {
+        .slider-content {
+          margin-bottom: -60px;
+          h1 {
+            font-size: 50px;
+            line-height: 60px;
+            align-items: top;
+          }
+          h3 {
+            margin-bottom: 20px;
+            text-align: start;
+          }
+          .btn {
+            width: 40%;
+            padding: 2px;
+            padding-right: 20px;
+            .btn-icon {
+              right: 3%;
+            }
+          }
+        }
+        .slider-image {
+          height: 40%;
+          position: absolute;
+          top: 0;
+          right: -250px;
+          img {
+            height: 50%;
+            width: 50%;
+          }
+        }
+      }
+    }
+    .swiper-button-next {
+    @include swiper-button(8%);
+  }
+  .swiper-button-prev {
+    @include swiper-button(1%);
+  }
+
   }
 }

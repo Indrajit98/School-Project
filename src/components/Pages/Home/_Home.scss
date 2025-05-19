@@ -19,3 +19,23 @@
        position: relative;
     }
 }
+@media (min-width: 320px) and (max-width:425px){
+    .background-wavify{
+        display: none;
+    }
+ .slider{
+    display: none;
+ }
+
+}
+@media (min-width: 426px) and (max-width:768px){
+ .home{
+    .background-wavify{
+        height: 200px;
+    }
+ 
+ .slider{
+ height:200px ;
+ }
+}
+}
